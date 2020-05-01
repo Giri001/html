@@ -1,0 +1,19 @@
+{% extends "index2.html" %}
+
+{% block head %}
+<title>Delete</title>
+{% endblock %}
+
+
+
+
+{% block body %}
+	<h1> This will Permanently Delete the Post</h1><br>
+	<form action='/posts/delete/{{i.id}}' method='POST'>
+		<input type='submit' value='Yes'>
+	</form>	
+	
+	<button><a href='/posts'>No</a></button>
+
+
+{% endblock %}
